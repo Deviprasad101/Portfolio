@@ -21,7 +21,6 @@ export const ContactSection: React.FC = () => {
         {/* Split Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          {/* Left Column (5 Cols) */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
               {/* Eyebrow Header */}
@@ -63,11 +62,41 @@ export const ContactSection: React.FC = () => {
               </motion.div>
 
               <p
-                className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md"
+                className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md mb-8"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 Have an ambitious system to architect, an engineering opportunity, or a collaborative inquiry? Send a direct dispatch below.
               </p>
+
+              {/* Contact Information */}
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <span className="text-[#D4AF37] font-medium text-xs font-mono uppercase tracking-widest mt-1">MAIL //</span>
+                  <a href="mailto:cdpreddyap@gmail.com" className="text-[#E8DFD8] text-xs sm:text-sm hover:text-[#D4AF37] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    cdpreddyap@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-[#D4AF37] font-medium text-xs font-mono uppercase tracking-widest mt-1">PHONE //</span>
+                  <span className="text-[#E8DFD8] text-xs sm:text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    6281604440
+                  </span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-[#D4AF37] font-medium text-xs font-mono uppercase tracking-widest mt-1">LOC //</span>
+                  <span className="text-[#E8DFD8] text-xs sm:text-sm max-w-[200px]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    Arlapadu, Pellakuru, Tirupati, Andhra Pradesh
+                  </span>
+                </div>
+                <div className="flex items-start space-x-3 pt-4 border-t border-[#8C6D4F]/20">
+                  <a href="https://github.com/deviprasad101" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#8C6D4F]/40 px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors">
+                    GITHUB
+                  </a>
+                  <a href="https://linkedin.com/in/deviprasad-reddy-chinthamreddy" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#8C6D4F]/40 px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors">
+                    LINKEDIN
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 

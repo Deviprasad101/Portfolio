@@ -13,38 +13,17 @@ interface RouteStop {
 const journey: RouteStop[] = [
   {
     id: '01',
-    year: 'MAY - JUN 2026',
-    title: 'FULL STACK & MOBILE INTERN',
-    organization: 'TECHNICAL HUB PVT LTD',
-    description: 'Engineered cross-platform mobile and responsive web applications utilizing React Native and modern full-stack workflows.',
+    year: '11/2025 - PRESENT',
+    title: 'FULL STACK DEVELOPER',
+    organization: 'IIT TIRUPATI NAVAVISHKAR I-HUB FOUNDATION',
+    description: 'Developed and maintained full-stack web applications using Python, Flask, FastAPI, React.js, and PostgreSQL. Built responsive interfaces and managed versions using Git.',
   },
   {
     id: '02',
-    year: '2026 MILESTONE',
-    title: 'TOP 100 NATIONAL TEAM',
-    organization: 'MYNTRA WEFORSHE HACKERRAMP',
-    description: 'Ranked among the Top 100 nationwide teams while maintaining Department Topper status (9.07 CGPA) in Data Science.',
-  },
-  {
-    id: '03',
-    year: 'MAY - JUN 2025',
-    title: 'FULL STACK TRAINEE',
-    organization: 'TECHNICAL HUB PVT LTD',
-    description: 'Trained in modern full-stack architecture, developing and deploying end-to-end interactive responsive web platforms.',
-  },
-  {
-    id: '04',
-    year: '2023 - 2027',
-    title: 'B.TECH IN DATA SCIENCE',
-    organization: 'ADITYA COLLEGE OF ENGINEERING',
-    description: 'Specializing in Machine Learning and System Design. Solved 1200+ algorithm challenges across LeetCode, CodeChef, and GeeksforGeeks.',
-  },
-  {
-    id: '05',
-    year: '2021 - 2023',
-    title: 'HIGHER SECONDARY (MPC)',
-    organization: 'SRI CHAITANYA JUNIOR COLLEGE',
-    description: 'Completed specialized coursework in Mathematics, Physics, and Chemistry with 90.60% aggregate excellence.',
+    year: '2021 - 2025',
+    title: 'B.TECH CSE (AIML)',
+    organization: 'MALLA REDDY ENGINEERING COLLEGE',
+    description: 'Graduating with a 7.06 CGPA. Gained strong foundations in programming, AI/ML concepts, and software development methodologies.',
   },
 ];
 

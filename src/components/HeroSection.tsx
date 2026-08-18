@@ -118,7 +118,7 @@ export const HeroSection: React.FC = () => {
             className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            LOHITHA.
+            DEVI PRASAD.
           </a>
 
           {/* Navigation Links */}
@@ -194,7 +194,7 @@ export const HeroSection: React.FC = () => {
                 className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#C4B29E]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> UI/UX DESIGNER <span className="text-[#8C6D4F] mx-1">•</span> DATA SCIENCE
+                FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> PYTHON DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> PROBLEM SOLVER
               </p>
             </motion.div>
 
@@ -205,9 +205,9 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I turn bold ideas into seamless digital experiences.
+                Motivated Computer Science student eager to build impactful projects.
                 <br />
-                Where frontend meets powerful backend, and code transforms vision into impact.
+                Bringing strong Python, web development, and problem-solving skills to every challenge.
               </p>
             </motion.div>
 
@@ -282,7 +282,7 @@ export const HeroSection: React.FC = () => {
                 letterSpacing: '0.04em',
               }}
             >
-              Lohitha
+              Devi Prasad
             </div>
           </motion.div>
         </div>
