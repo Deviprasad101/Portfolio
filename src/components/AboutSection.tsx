@@ -129,13 +129,15 @@ export const AboutSection: React.FC = () => {
             </motion.div>
 
             {/* Concise Bio Paragraph */}
-            <motion.p
+            <motion.div 
               variants={fadeUpVariants}
-              className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-10 max-w-xl"
+              className="text-sm sm:text-[15px] font-light text-[#BDB0A4] leading-relaxed max-w-2xl space-y-6"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              I'm <span className="text-[#F3DBB3] font-medium">Devi Prasad Chinthamreddy</span>, a motivated Computer Science student with strong Python, web development, and problem-solving skills, eager to contribute to impactful projects and grow as a software professional.
-            </motion.p>
+              <p>
+                I'm <span className="text-[#F3DBB3] font-medium">Deviprasad Chinthamreddy</span>, a motivated Computer Science student with strong Python, web development, and problem-solving skills, eager to contribute to impactful projects and grow as a software professional.
+              </p>
+            </motion.div>
 
             {/* Concise 4-Item Achievement Metrics Grid */}
             <motion.div 
@@ -263,7 +265,7 @@ export const AboutSection: React.FC = () => {
                 {/* Main Portrait */}
                 <img
                   src={aboutImg}
-                  alt="Devi Prasad Chinthamreddy"
+                  alt="Deviprasad Chinthamreddy"
                   className="w-full h-full object-cover object-top filter brightness-[0.94] contrast-[1.06] saturate-[1.02] group-hover:brightness-105 group-hover:contrast-[1.12] transition-all duration-700 ease-out"
                 />
 
@@ -282,10 +284,10 @@ export const AboutSection: React.FC = () => {
                 {/* Monoline Signature */}
                 <div className="absolute bottom-4 right-4 z-20 select-none">
                   <span 
-                    className="text-3xl text-[#F2D8A7] drop-shadow-[0_0_12px_rgba(242,216,167,0.5)] transition-colors duration-300 group-hover:text-white"
+                    className="text-3xl text-[#F2D8A7] drop-shadow-[0_0_12px_rgba(242,216,167,0.5)] transition-colors duration-300 group-hover:text-white whitespace-nowrap"
                     style={{ fontFamily: "'Herr Von Muellerhoff', cursive" }}
                   >
-                    Devi Prasad
+                    Deviprasad Chinthamreddy
                   </span>
                 </div>
               </div>

@@ -115,7 +115,7 @@ export const HeroSection: React.FC = () => {
             className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            DEVI PRASAD.
+            DEVIPRASAD CHINTHAMREDDY.
           </a>
 
           {/* Navigation Links */}
@@ -273,13 +273,13 @@ export const HeroSection: React.FC = () => {
 
             {/* 4. Fine Monoline Calligraphy Signature */}
             <div 
-              className="text-[2.2rem] text-[#D8AB64] font-normal leading-none -ml-0.5"
+              className="text-[2.2rem] text-[#D8AB64] font-normal leading-none -ml-0.5 whitespace-nowrap"
               style={{ 
                 fontFamily: "'Herr Von Muellerhoff', 'Allura', cursive",
                 letterSpacing: '0.04em',
               }}
             >
-              Devi Prasad
+              Deviprasad Chinthamreddy
             </div>
           </motion.div>
         </div>
