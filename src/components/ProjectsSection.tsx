@@ -56,6 +56,26 @@ const projects: Project[] = [
       { label: 'MAPS', value: 'Cesium 3D' },
     ],
   },
+  {
+    number: '03',
+    title: '3D GLOBAL MONITOR',
+    category: 'GEOSPATIAL DASHBOARD',
+    description:
+      'A high-performance 3D geospatial dashboard for visualizing large-scale city models and multi-dimensional climate datasets. Features live earthquake GeoJSON feeds, dynamic lighting, and efficient data streaming via PMTiles and Zarr layers.',
+    githubUrl: 'https://github.com/deviprasad101',
+    tech: [
+      'React 18',
+      'MapLibre GL',
+      'PMTiles',
+      'Zarr',
+      'Python/Flask',
+    ],
+    metrics: [
+      { label: 'FRONTEND', value: 'React & MapLibre' },
+      { label: 'DATA', value: 'PMTiles, Zarr, GeoJSON' },
+      { label: 'BACKEND', value: 'Python / Flask' },
+    ],
+  },
 ];
 
 export const ProjectsSection: React.FC = () => {
