@@ -5,10 +5,39 @@ import { motion } from 'framer-motion';
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [sent, setSent] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "525e4bb0-483b-4155-99d5-70fa04812e84",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: "New Message from Portfolio Terminal",
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSent(true);
+      } else {
+        alert("Transmission failed. Please check the network.");
+      }
+    } catch (error) {
+      alert("Transmission failed. Please check the network.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -181,10 +210,11 @@ export const ContactSection: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 border border-[#8C6D4F]/50 bg-[#14100D] hover:border-[#D4AF37] hover:bg-[#1A1510] text-[#E8DFD8] hover:text-[#F7E7C4] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+                  disabled={isSubmitting}
+                  className="w-full py-3.5 border border-[#8C6D4F]/50 bg-[#14100D] hover:border-[#D4AF37] hover:bg-[#1A1510] text-[#E8DFD8] hover:text-[#F7E7C4] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)] disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
-                  EXECUTE DISPATCH ↗
+                  {isSubmitting ? "TRANSMITTING..." : "EXECUTE DISPATCH ↗"}
                 </button>
 
               </form>
