@@ -7,7 +7,7 @@ import { ContactSection } from './components/ContactSection';
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-black text-[#E8DFD8] selection:bg-[#cbb59d] selection:text-black">
+    <div className="w-full min-h-screen bg-[#070B14] text-[#F8FAFC] selection:bg-[#3B82F6]/30 selection:text-[#06B6D4]">
       <HeroSection />
       <AboutSection />
       <SkillsSection />

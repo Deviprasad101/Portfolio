@@ -43,7 +43,7 @@ export const ContactSection: React.FC = () => {
   return (
     <footer
       id="contact"
-      className="relative w-full bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black pt-16 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
+      className="relative w-full bg-[#070B14] text-[#F8FAFC] font-sans selection:bg-[#3B82F6]/30 selection:text-[#06B6D4] pt-16 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
         
@@ -61,12 +61,12 @@ export const ContactSection: React.FC = () => {
                 className="flex items-center space-x-4 mb-5"
               >
                 <span
-                  className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#D4AF37]"
+                  className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#3B82F6]"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   05 / CONTACT
                 </span>
-                <div className="w-16 h-[1px] bg-gradient-to-r from-[#D4AF37]/80 via-[#8C6D4F]/40 to-transparent" />
+                <div className="w-16 h-[1px] bg-gradient-to-r from-[#3B82F6]/80 via-[#8B5CF6]/40 to-transparent" />
               </motion.div>
 
               {/* Headline */}
@@ -81,17 +81,17 @@ export const ContactSection: React.FC = () => {
                   className="text-5xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.85] select-none"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#E2E8F0] to-[#94A3B8] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
                     INITIALIZE
                   </span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F8FAFC] via-[#3B82F6] to-[#1E3A8A] drop-shadow-[0_8px_25px_rgba(59,130,246,0.35)]">
                     TRANSMISSION.
                   </span>
                 </h2>
               </motion.div>
 
               <p
-                className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md mb-8"
+                className="text-xs sm:text-[13px] font-light text-[#94A3B8] leading-relaxed max-w-md mb-8"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 Have an ambitious system to architect, an engineering opportunity, or a collaborative inquiry? Send a direct dispatch below.
@@ -100,28 +100,28 @@ export const ContactSection: React.FC = () => {
               {/* Contact Information */}
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <span className="text-[#D4AF37] font-medium text-xs font-mono uppercase tracking-widest mt-1">MAIL //</span>
-                  <a href="mailto:cdpreddyap@gmail.com" className="text-[#E8DFD8] text-xs sm:text-sm hover:text-[#D4AF37] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">MAIL //</span>
+                  <a href="mailto:cdpreddyap@gmail.com" className="text-[#F8FAFC] text-xs sm:text-sm hover:text-[#06B6D4] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     cdpreddyap@gmail.com
                   </a>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <span className="text-[#D4AF37] font-medium text-xs font-mono uppercase tracking-widest mt-1">PHONE //</span>
-                  <span className="text-[#E8DFD8] text-xs sm:text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">PHONE //</span>
+                  <span className="text-[#F8FAFC] text-xs sm:text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     6281604440
                   </span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <span className="text-[#D4AF37] font-medium text-xs font-mono uppercase tracking-widest mt-1">LOC //</span>
-                  <span className="text-[#E8DFD8] text-xs sm:text-sm max-w-[200px]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">LOC //</span>
+                  <span className="text-[#F8FAFC] text-xs sm:text-sm max-w-[200px]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     Arlapadu, Pellakuru, Tirupati, Andhra Pradesh
                   </span>
                 </div>
-                <div className="flex items-start space-x-3 pt-4 border-t border-[#8C6D4F]/20">
-                  <a href="https://github.com/deviprasad101" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#8C6D4F]/40 px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors">
+                <div className="flex items-start space-x-3 pt-4 border-t border-[#3B82F6]/20">
+                  <a href="https://github.com/deviprasad101" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-3 py-1.5 hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors">
                     GITHUB
                   </a>
-                  <a href="https://linkedin.com/in/deviprasad-reddy-chinthamreddy" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#8C6D4F]/40 px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors">
+                  <a href="https://linkedin.com/in/deviprasad-reddy-chinthamreddy" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-3 py-1.5 hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors">
                     LINKEDIN
                   </a>
                 </div>
@@ -135,26 +135,26 @@ export const ContactSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-7 relative w-full rounded-sm border border-[#8C6D4F]/40 bg-[#0A0806] p-8 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.9)] overflow-hidden"
+            className="lg:col-span-7 relative w-full rounded-sm border border-[#3B82F6]/40 bg-[#0B1120] p-8 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.9)] overflow-hidden"
           >
             {/* Top Gold Horizon Edge */}
-            <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/70 to-transparent" />
+            <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#3B82F6]/70 to-transparent" />
             
             {/* Precision Corner Crosshairs */}
-            <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#D4AF37]/60" />
-            <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#D4AF37]/60" />
-            <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#D4AF37]/60" />
-            <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#D4AF37]/60" />
+            <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#3B82F6]/60" />
+            <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#3B82F6]/60" />
+            <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#3B82F6]/60" />
+            <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#3B82F6]/60" />
 
             {sent ? (
               <div className="py-16 text-center space-y-4">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-[#D4AF37] text-[#D4AF37] text-sm">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-[#06B6D4] text-[#06B6D4] text-sm">
                   ✓
                 </div>
                 <h3 className="text-3xl text-white font-normal uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                   PACKET DELIVERED
                 </h3>
-                <p className="text-xs text-[#A8988B] font-light" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <p className="text-xs text-[#94A3B8] font-light" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   Transmission registered successfully.
                 </p>
               </div>
@@ -163,7 +163,7 @@ export const ContactSection: React.FC = () => {
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
+                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#3B82F6] mb-2">
                       // SENDER
                     </span>
                     <input
@@ -172,13 +172,13 @@ export const ContactSection: React.FC = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Enter name"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
+                      className="w-full bg-[#070B14] border border-[#3B82F6]/30 focus:border-[#06B6D4] text-xs text-white placeholder-[#3B82F6]/50 px-4 py-3 outline-none rounded-sm transition-colors"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     />
                   </div>
 
                   <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
+                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#3B82F6] mb-2">
                       // CHANNEL
                     </span>
                     <input
@@ -187,14 +187,14 @@ export const ContactSection: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="Enter email"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
+                      className="w-full bg-[#070B14] border border-[#3B82F6]/30 focus:border-[#06B6D4] text-xs text-white placeholder-[#3B82F6]/50 px-4 py-3 outline-none rounded-sm transition-colors"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
+                  <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#3B82F6] mb-2">
                     // PAYLOAD
                   </span>
                   <textarea
@@ -203,7 +203,7 @@ export const ContactSection: React.FC = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Enter transmission payload..."
-                    className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 p-4 outline-none rounded-sm transition-colors resize-none"
+                    className="w-full bg-[#070B14] border border-[#3B82F6]/30 focus:border-[#06B6D4] text-xs text-white placeholder-[#3B82F6]/50 p-4 outline-none rounded-sm transition-colors resize-none"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   />
                 </div>
@@ -211,7 +211,7 @@ export const ContactSection: React.FC = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 border border-[#8C6D4F]/50 bg-[#14100D] hover:border-[#D4AF37] hover:bg-[#1A1510] text-[#E8DFD8] hover:text-[#F7E7C4] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)] disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-3.5 border border-[#3B82F6]/50 bg-[#0B1120] hover:border-[#06B6D4] hover:bg-[#3B82F6] text-[#F8FAFC] hover:text-[#F8FAFC] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)] disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
                   {isSubmitting ? "TRANSMITTING..." : "EXECUTE DISPATCH ↗"}
@@ -224,11 +224,11 @@ export const ContactSection: React.FC = () => {
         </div>
 
         {/* System Footer Line */}
-        <div className="pt-16 mt-16 border-t border-[#8C6D4F]/15 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
-          <span className="text-[10px] font-mono tracking-widest text-[#8C6D4F] uppercase">
+        <div className="pt-16 mt-16 border-t border-[#3B82F6]/15 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
+          <span className="text-[10px] font-mono tracking-widest text-[#94A3B8] uppercase">
             PORTFOLIO // EDITION 2026
           </span>
-          <span className="text-[10px] font-mono text-[#8C6D4F]">
+          <span className="text-[10px] font-mono text-[#94A3B8]">
             © {new Date().getFullYear()} • ENGINEERED WITH PRECISION
           </span>
         </div>
