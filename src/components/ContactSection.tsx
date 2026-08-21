@@ -179,7 +179,7 @@ export const ContactSection: React.FC = () => {
 
                   <div>
                     <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#3B82F6] mb-2">
-                      // CHANNEL
+                      // EMAIL
                     </span>
                     <input
                       type="email"
