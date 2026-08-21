@@ -128,7 +128,7 @@ export const ContactSection: React.FC = () => {
                   <a href="https://github.com/deviprasad101" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-4 py-2 hover:border-[#06B6D4] hover:bg-[#3B82F6]/10 hover:text-[#F8FAFC] text-[#94A3B8] transition-all">
                     GITHUB
                   </a>
-                  <a href="https://linkedin.com/in/deviprasad-reddy-chinthamreddy" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-4 py-2 hover:border-[#06B6D4] hover:bg-[#3B82F6]/10 hover:text-[#F8FAFC] text-[#94A3B8] transition-all">
+                  <a href="https://www.linkedin.com/in/deviprasad-chinthamreddy-759b2326b/" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-4 py-2 hover:border-[#06B6D4] hover:bg-[#3B82F6]/10 hover:text-[#F8FAFC] text-[#94A3B8] transition-all">
                     LINKEDIN
                   </a>
                   <a href="/resume.pdf" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#06B6D4]/60 bg-[#06B6D4]/5 px-4 py-2 hover:border-[#06B6D4] hover:bg-[#06B6D4]/15 hover:text-[#F8FAFC] text-[#06B6D4] transition-all flex items-center space-x-1.5">
