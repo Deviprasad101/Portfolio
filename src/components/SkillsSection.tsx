@@ -120,7 +120,7 @@ export const SkillsSection: React.FC = () => {
             style={{ top: item.top, left: item.left }}
             initial={{ y: 0, x: 0, rotate: 0, opacity: 0 }}
             whileInView={{
-              opacity: [0.08, 0.18, 0.08],
+              opacity: [0.25, 0.55, 0.25],
               y: [-12, 12, -12],
               x: [-4, 4, -4],
               rotate: [-4, 4, -4],
@@ -143,8 +143,8 @@ export const SkillsSection: React.FC = () => {
             >
               {/* Icon */}
               <div 
-                className={`${item.sizeClasses} text-white/40 group-hover:text-white transition-colors duration-300 drop-shadow-none group-hover:drop-shadow-[0_0_15px_currentColor]`}
-                style={{ color: item.color }}
+                className={`${item.sizeClasses} transition-all duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.05)] group-hover:drop-shadow-[0_0_20px_currentColor]`}
+                style={{ color: item.color, filter: 'brightness(1.1)' }}
               >
                 <item.Icon />
               </div>
