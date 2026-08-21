@@ -191,7 +191,7 @@ export const HeroSection: React.FC = () => {
                 className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#94A3B8]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                FULL STACK DEVELOPER <span className="text-[#3B82F6] mx-1">•</span> PYTHON DEVELOPER <span className="text-[#3B82F6] mx-1">•</span> PROBLEM SOLVER
+                FULL STACK DEVELOPER <span className="text-[#3B82F6] mx-1">•</span> PYTHON <span className="text-[#3B82F6] mx-1">•</span> FLASK <span className="text-[#3B82F6] mx-1">•</span> FASTAPI <span className="text-[#3B82F6] mx-1">•</span> REACT.JS
               </p>
             </motion.div>
 
@@ -202,19 +202,17 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                Motivated Computer Science student eager to build impactful projects.
-                <br />
-                Bringing strong Python, web development, and problem-solving skills to every challenge.
+                Full Stack Developer with hands-on experience building responsive web applications, REST APIs, database-driven systems, and geospatial solutions using Python, Flask, FastAPI, React.js, PostgreSQL, and modern development tools.
               </p>
             </motion.div>
 
             {/* CTA Buttons */}
             <motion.div
               variants={fadeUpVariants}
-              className="flex flex-row items-center gap-4 sm:gap-6"
+              className="flex flex-row items-center gap-4 sm:gap-6 flex-wrap mt-2"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              {/* Explore My Work CTA */}
+              {/* View My Work CTA */}
               <motion.a
                 href="#work"
                 onMouseEnter={() => setIsHovered(true)}
@@ -223,7 +221,7 @@ export const HeroSection: React.FC = () => {
                 className="relative inline-flex items-center space-x-3 px-6 sm:px-7 py-3.5 border border-[#3B82F6] bg-[#070B14]/80 hover:border-[#06B6D4] text-[#F8FAFC] hover:text-[#06B6D4] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.18)]"
               >
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#06B6D4]/40 to-transparent pointer-events-none" />
-                <span>EXPLORE MY WORK</span>
+                <span>VIEW MY WORK</span>
                 <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">
                   ↗
                 </span>
@@ -242,6 +240,20 @@ export const HeroSection: React.FC = () => {
                 <span>DOWNLOAD RESUME</span>
                 <span className="transform transition-transform duration-300 group-hover:translate-y-0.5 text-xs">
                   ↓
+                </span>
+              </motion.a>
+
+              {/* Contact Me Button */}
+              <motion.a
+                href="#contact"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                whileHover={{ scale: 1.02 }}
+                className="relative inline-flex items-center space-x-2 px-6 sm:px-7 py-3.5 border border-[#3B82F6]/40 hover:border-[#3B82F6] text-[#94A3B8] hover:text-[#F8FAFC] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
+              >
+                <span>CONTACT ME</span>
+                <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">
+                  ↗
                 </span>
               </motion.a>
             </motion.div>
