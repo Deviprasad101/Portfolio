@@ -173,14 +173,14 @@ export const HeroSection: React.FC = () => {
                   I BUILD
                 </span>
 
-                {/* Line 2: DIGITAL */}
+                {/* Line 2: SCALABLE */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F8FAFC] via-[#3B82F6] to-[#1E3A8A] drop-shadow-[0_8px_25px_rgba(59,130,246,0.35)]">
-                  DIGITAL
+                  SCALABLE
                 </span>
 
-                {/* Line 3: EXPERIENCES */}
+                {/* Line 3: WEB SOLUTIONS */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#E2E8F0] via-[#8B5CF6] to-[#4C1D95] drop-shadow-[0_10px_30px_rgba(139,92,246,0.4)]">
-                  EXPERIENCES
+                  WEB SOLUTIONS
                 </span>
               </h1>
             </motion.div>
