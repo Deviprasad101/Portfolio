@@ -82,10 +82,10 @@ export const ContactSection: React.FC = () => {
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#E2E8F0] to-[#94A3B8] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-                    INITIALIZE
+                    LET'S BUILD
                   </span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F8FAFC] via-[#3B82F6] to-[#1E3A8A] drop-shadow-[0_8px_25px_rgba(59,130,246,0.35)]">
-                    TRANSMISSION.
+                    SOMETHING TOGETHER.
                   </span>
                 </h2>
               </motion.div>
@@ -94,7 +94,7 @@ export const ContactSection: React.FC = () => {
                 className="text-xs sm:text-[13px] font-light text-[#94A3B8] leading-relaxed max-w-md mb-8"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Have an ambitious system to architect, an engineering opportunity, or a collaborative inquiry? Send a direct dispatch below.
+                I'm open to opportunities where I can contribute my full-stack development skills, work on real-world software solutions, and continue growing as a software developer.
               </p>
 
               {/* Contact Information */}
@@ -108,13 +108,13 @@ export const ContactSection: React.FC = () => {
                 <div className="flex items-start space-x-3">
                   <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">PHONE //</span>
                   <span className="text-[#F8FAFC] text-xs sm:text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                    6281604440
+                    +91 6281604440
                   </span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">LOC //</span>
                   <span className="text-[#F8FAFC] text-xs sm:text-sm max-w-[200px]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                    Arlapadu, Pellakuru, Tirupati, Andhra Pradesh
+                    Tirupati, Andhra Pradesh, India
                   </span>
                 </div>
                 <div className="flex items-start space-x-3 pt-4 border-t border-[#3B82F6]/20">
