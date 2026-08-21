@@ -144,14 +144,17 @@ export const SkillsSection: React.FC = () => {
               onMouseEnter={() => setHoveredIdx(idx)}
               onMouseLeave={() => setHoveredIdx(null)}
               whileHover={{ y: -5, transition: { duration: 0.25 } }}
-              className={`${block.colSpan} relative p-8 sm:p-9 rounded-sm border border-[#3B82F6]/35 bg-[#0B1120]/85 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:border-[#06B6D4]/80 hover:shadow-[0_16px_45px_rgba(6,182,212,0.14)] cursor-pointer group`}
+              className={`${block.colSpan} relative p-8 sm:p-9 rounded-sm border-t border-t-[#3B82F6]/60 border-l border-l-[#3B82F6]/40 border-r border-r-[#3B82F6]/40 border-b border-b-[#3B82F6]/20 bg-[#0B1120]/85 backdrop-blur-xl overflow-hidden transition-all duration-500 shadow-[0_8px_30px_rgba(59,130,246,0.08)] hover:border-t-[#06B6D4]/90 hover:border-x-[#06B6D4]/70 hover:border-b-[#06B6D4]/40 hover:shadow-[0_16px_45px_rgba(6,182,212,0.25)] cursor-pointer group`}
             >
-              {/* Top Subtle Border Highlight */}
-              <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#3B82F6]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* Permanent Ambient Glow Behind Card Top */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[2px] bg-[#3B82F6]/50 blur-[6px] group-hover:bg-[#06B6D4] group-hover:blur-[8px] transition-all duration-500" />
+              
+              {/* Sharp Top Edge Highlight */}
+              <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#3B82F6]/80 to-transparent opacity-70 group-hover:opacity-100 group-hover:via-[#06B6D4] transition-all duration-500" />
 
               {/* Corner Minimal Pins */}
-              <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#3B82F6]/40 group-hover:border-[#3B82F6] transition-colors duration-300" />
-              <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#3B82F6]/40 group-hover:border-[#3B82F6] transition-colors duration-300" />
+              <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-[#3B82F6]/60 group-hover:border-[#06B6D4] group-hover:shadow-[0_0_8px_rgba(6,182,212,0.4)] transition-all duration-300" />
+              <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-[#3B82F6]/60 group-hover:border-[#06B6D4] group-hover:shadow-[0_0_8px_rgba(6,182,212,0.4)] transition-all duration-300" />
 
               {/* Card Meta Header */}
               <div className="flex items-center justify-between mb-4">
