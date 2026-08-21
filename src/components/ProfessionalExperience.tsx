@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 
-const fadeUpVariants = {
+const fadeUpVariants: Variants = {
   hidden: { opacity: 0, y: 30, filter: 'blur(6px)' },
   visible: {
     opacity: 1,
