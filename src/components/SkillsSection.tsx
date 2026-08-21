@@ -46,7 +46,7 @@ const bentoCategories = [
   {
     title: 'AI DEVELOPMENT',
     badge: 'AI-ASSISTED',
-    items: ['Cursor', 'Antigravity', 'ChatGPT', 'Claude AI'],
+    items: ['Cursor', 'Antigravity', 'ChatGPT', 'Claude AI', 'Stitch AI'],
     description: 'Using AI-assisted development tools for coding, debugging, research, documentation, and problem-solving.',
     stat: 'ACCELERATED',
     colSpan: 'md:col-span-6 lg:col-span-4',
