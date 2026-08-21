@@ -25,14 +25,11 @@ const projects: Project[] = [
     problem: 'Pilgrims often face difficulties planning multiple destinations, selecting suitable travel packages, navigating routes, and keeping track of temple visits.',
     solution: 'Developed a digital travel planning platform that enables users to select destinations, choose budget-based travel packages, visualize routes on an interactive map, and check in at temples using QR codes.',
     keyFeatures: [
-      'Budget-based travel packages',
-      'Interactive route visualization',
-      'Temple information and destination discovery',
-      'Temple QR-code check-in',
-      'GPS-based guidance',
+      'Budget-based travel packages & interactive routing',
+      'Comprehensive temple discovery & GPS guidance',
+      'Secure QR-code check-in with duplicate prevention',
       'Voice-based travel assistance',
-      'Admin visitor and check-in dashboard',
-      'Duplicate check-in prevention'
+      'Centralized admin dashboard for visitor management'
     ],
     outcome: 'Helps users plan pilgrimage trips more efficiently while providing interactive navigation, digital check-ins, and centralized visitor information for administrators.',
     githubUrl: 'https://github.com/deviprasad101',
@@ -45,15 +42,13 @@ const projects: Project[] = [
     oneLineDescription: 'A centralized geospatial data management and visualization platform for discovering, publishing, and analyzing spatial datasets.',
     problem: 'Geospatial datasets such as vector, raster, LAS, and 3D data can be difficult to organize, publish, search, and visualize across separate systems.',
     solution: 'Developed a centralized platform that allows users to upload, manage, search, preview, and publish geospatial datasets through an integrated web interface.',
-    architecture: 'Flask → PostgreSQL/PostGIS → GeoServer → Web Interface',
+    architecture: 'Flask → PostGIS → GeoServer → Web Interface',
     keyFeatures: [
-      'Geospatial dataset upload and management',
+      'Centralized dataset upload, management, & processing',
       'Spatial database integration using PostGIS',
       'WMS/WFS service publishing through GeoServer',
-      'Raster and vector data processing',
-      '3D visualization',
-      'Geospatial search and discovery',
-      'Interactive map-based data preview'
+      'Advanced 3D visualization and mapping',
+      'Interactive geospatial search and data preview'
     ],
     outcome: 'Provides a centralized platform for discovering, previewing, managing, and serving geospatial datasets through standardized geospatial services.',
     githubUrl: 'https://github.com/deviprasad101',
