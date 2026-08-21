@@ -6,10 +6,14 @@ interface Project {
   number: string;
   title: string;
   category: string;
-  description: string;
+  oneLineDescription: string;
+  problem: string;
+  solution: string;
+  architecture?: string;
+  keyFeatures: string[];
+  outcome: string;
   githubUrl: string;
   tech: string[];
-  metrics: { label: string; value: string }[];
 }
 
 const projects: Project[] = [
@@ -17,66 +21,78 @@ const projects: Project[] = [
     number: '01',
     title: 'GEO TRIP PLANNER',
     category: 'WEB PLATFORM',
-    description:
-      'Budget-based packages, place picker, interactive route map, personal temple QR check-in, and admin visit dashboard to help pilgrims plan multi-stop Tirupati trips efficiently. Allows staff to scan QR codes and admins to manage visitor data.',
+    oneLineDescription: 'A geospatial pilgrimage and travel planning platform designed to simplify multi-stop Tirupati trips.',
+    problem: 'Pilgrims often face difficulties planning multiple destinations, selecting suitable travel packages, navigating routes, and keeping track of temple visits.',
+    solution: 'Developed a digital travel planning platform that enables users to select destinations, choose budget-based travel packages, visualize routes on an interactive map, and check in at temples using QR codes.',
+    keyFeatures: [
+      'Budget-based travel packages',
+      'Interactive route visualization',
+      'Temple information and destination discovery',
+      'Temple QR-code check-in',
+      'GPS-based guidance',
+      'Voice-based travel assistance',
+      'Admin visitor and check-in dashboard',
+      'Duplicate check-in prevention'
+    ],
+    outcome: 'Helps users plan pilgrimage trips more efficiently while providing interactive navigation, digital check-ins, and centralized visitor information for administrators.',
     githubUrl: 'https://github.com/deviprasad101',
-    tech: [
-      'Python',
-      'Flask',
-      'HTML/CSS/JS',
-      'Leaflet',
-      'PostgreSQL',
-      'SQLite',
-      'OSRM',
-    ],
-    metrics: [
-      { label: 'PLATFORM', value: 'Web' },
-      { label: 'DATABASE', value: 'PostgreSQL & SQLite' },
-      { label: 'MAPS', value: 'Leaflet & OSRM' },
-    ],
+    tech: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'React.js', 'PostgreSQL', 'SQLite', 'Leaflet', 'OpenStreetMap', 'OSRM'],
   },
   {
     number: '02',
     title: 'GEO INTEL META HUB',
     category: 'GEOSPATIAL PLATFORM',
-    description:
-      'A central catalog for geospatial data (vectors, rasters, LAS, 3D) where users can upload files, publish them via GeoServer, and discover, preview, and serve layers from one platform using WMS/WFS.',
+    oneLineDescription: 'A centralized geospatial data management and visualization platform for discovering, publishing, and analyzing spatial datasets.',
+    problem: 'Geospatial datasets such as vector, raster, LAS, and 3D data can be difficult to organize, publish, search, and visualize across separate systems.',
+    solution: 'Developed a centralized platform that allows users to upload, manage, search, preview, and publish geospatial datasets through an integrated web interface.',
+    architecture: 'Flask → PostgreSQL/PostGIS → GeoServer → Web Interface',
+    keyFeatures: [
+      'Geospatial dataset upload and management',
+      'Spatial database integration using PostGIS',
+      'WMS/WFS service publishing through GeoServer',
+      'Raster and vector data processing',
+      '3D visualization',
+      'Geospatial search and discovery',
+      'Interactive map-based data preview'
+    ],
+    outcome: 'Provides a centralized platform for discovering, previewing, managing, and serving geospatial datasets through standardized geospatial services.',
     githubUrl: 'https://github.com/deviprasad101',
-    tech: [
-      'Flask',
-      'PostgreSQL/PostGIS',
-      'GeoServer',
-      'GDAL/PDAL',
-      'HTML/JS',
-      'Cesium',
-    ],
-    metrics: [
-      { label: 'ARCHITECTURE', value: 'Flask + GeoServer' },
-      { label: 'DATA', value: 'Vectors, Rasters, 3D' },
-      { label: 'MAPS', value: 'Cesium 3D' },
-    ],
+    tech: ['Python', 'Flask', 'PostgreSQL', 'PostGIS', 'GeoServer', 'GDAL', 'PDAL', 'ogr2ogr', 'JavaScript', 'Cesium'],
   },
   {
     number: '03',
     title: '3D GLOBAL MONITOR',
     category: 'GEOSPATIAL DASHBOARD',
-    description:
-      'A high-performance 3D geospatial dashboard for visualizing large-scale city models and multi-dimensional climate datasets. Features live earthquake GeoJSON feeds, dynamic lighting, and efficient data streaming via PMTiles and Zarr layers.',
+    oneLineDescription: 'A high-performance 3D geospatial dashboard for visualizing large-scale city models and multi-dimensional climate datasets.',
+    problem: 'Handling and rendering large-scale 3D city models, real-time data feeds, and massive multi-dimensional climate datasets in a web browser is computationally heavy and often slow.',
+    solution: 'Developed a high-performance 3D geospatial dashboard that leverages modern web mapping technologies to efficiently stream and visualize massive datasets and live feeds.',
+    keyFeatures: [
+      'Large-scale 3D city model visualization',
+      'Live earthquake GeoJSON data integration',
+      'Multi-dimensional climate dataset rendering',
+      'Dynamic lighting and environmental effects',
+      'Efficient data streaming using PMTiles and Zarr'
+    ],
+    outcome: 'Enables real-time, interactive exploration of massive geospatial and climate datasets directly in the browser without performance bottlenecks.',
     githubUrl: 'https://github.com/deviprasad101',
-    tech: [
-      'React 18',
-      'MapLibre GL',
-      'PMTiles',
-      'Zarr',
-      'Python/Flask',
-    ],
-    metrics: [
-      { label: 'FRONTEND', value: 'React & MapLibre' },
-      { label: 'DATA', value: 'PMTiles, Zarr, GeoJSON' },
-      { label: 'BACKEND', value: 'Python / Flask' },
-    ],
+    tech: ['React 18', 'MapLibre GL', 'PMTiles', 'Zarr', 'Python', 'Flask'],
   },
 ];
+
+const SubCard: React.FC<{ title: string; children: React.ReactNode; className?: string; icon?: React.ReactNode }> = ({ title, children, className = '', icon }) => (
+  <div className={`relative p-5 sm:p-7 rounded-sm border border-[#3B82F6]/20 bg-[#070B14]/40 hover:bg-[#0B1120]/80 hover:border-[#06B6D4]/40 transition-all duration-300 group ${className}`}>
+    <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#3B82F6]/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
+    <div className="flex items-center space-x-2 mb-3">
+      {icon && <span className="text-[#3B82F6] group-hover:text-[#06B6D4] transition-colors">{icon}</span>}
+      <h4 className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#3B82F6] group-hover:text-[#06B6D4] transition-colors">
+        {title}
+      </h4>
+    </div>
+    <div className="text-[#94A3B8] font-light leading-relaxed group-hover:text-[#F8FAFC] transition-colors duration-300" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+      {children}
+    </div>
+  </div>
+);
 
 export const ProjectsSection: React.FC = () => {
   return (
@@ -102,7 +118,7 @@ export const ProjectsSection: React.FC = () => {
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#3B82F6]"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            03 / FEATURED WORK
+            04 / FEATURED WORK
           </span>
           <div className="w-20 h-[1px] bg-gradient-to-r from-[#3B82F6]/80 via-[#8B5CF6]/40 to-transparent" />
         </motion.div>
@@ -120,136 +136,127 @@ export const ProjectsSection: React.FC = () => {
             style={{ fontFamily: "'Bebas Neue', sans-serif" }}
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#E2E8F0] to-[#94A3B8] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-              SELECTED WORKS.
-            </span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F8FAFC] via-[#3B82F6] to-[#1E3A8A] drop-shadow-[0_8px_25px_rgba(59,130,246,0.35)]">
-              ENGINEERED VALUE.
+              PROJECTS.
             </span>
           </h2>
-
-          <p
-            className="text-xs sm:text-sm font-light text-[#94A3B8] max-w-sm mt-4 md:mt-0 leading-relaxed"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            Scroll down to unfold the system architecture cards. Each platform was built to solve complex operational challenges.
-          </p>
         </motion.div>
 
         {/* React Bits Stacking Deck */}
-        {/* React Bits Stacking Deck */}
-<ScrollStack
-  itemDistance={20}
-  itemScale={0.035}
-  itemStackDistance={28}
-  stackPosition="15%"
-  scaleEndPosition="6%"
-  baseScale={0.88}
-  useWindowScroll={true}
->
+        <ScrollStack
+          itemDistance={20}
+          itemScale={0.035}
+          itemStackDistance={28}
+          stackPosition="15%"
+          scaleEndPosition="6%"
+          baseScale={0.88}
+          useWindowScroll={true}
+        >
           {projects.map((project) => (
             <ScrollStackItem key={project.title}>
-              <div className="relative w-full rounded-2xl border border-[#3B82F6]/50 bg-[#0B1120] p-8 sm:p-12 shadow-[0_25px_70px_rgba(0,0,0,0.98)] group overflow-hidden transition-colors duration-500 hover:border-[#06B6D4]">
+              <div className="relative w-full rounded-2xl border border-[#3B82F6]/40 bg-[#0B1120] p-6 sm:p-10 shadow-[0_25px_70px_rgba(0,0,0,0.98)] group/main overflow-hidden transition-colors duration-500 hover:border-[#06B6D4]">
                 
-                {/* Top Gold Border Light Flare */}
-                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#3B82F6]/80 to-transparent" />
-
-                {/* Corner Minimal L-Brackets */}
-                <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#3B82F6]/60 group-hover:border-[#3B82F6] transition-colors" />
-                <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#3B82F6]/60 group-hover:border-[#3B82F6] transition-colors" />
-                <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#3B82F6]/60 group-hover:border-[#3B82F6] transition-colors" />
-                <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#3B82F6]/60 group-hover:border-[#3B82F6] transition-colors" />
-
                 {/* Big Background Watermark Number */}
                 <span
-                  className="absolute -bottom-6 -right-3 text-8xl sm:text-9xl font-bold text-[#94A3B8]/5 select-none pointer-events-none leading-none"
+                  className="absolute -bottom-6 -right-3 text-8xl sm:text-9xl font-bold text-[#94A3B8]/5 select-none pointer-events-none leading-none z-0"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   {project.number}
                 </span>
 
-                {/* Content Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
-                  
-                  {/* Left Column (7 Cols) */}
-                  <div className="lg:col-span-7 flex flex-col justify-between">
+                <div className="relative z-10">
+                  {/* Header */}
+                  <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between border-b border-[#3B82F6]/25 pb-6">
                     <div>
-                      <div className="flex items-center space-x-3 mb-4">
-                        <span className="text-xs font-mono font-bold text-[#3B82F6]">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <span className="text-xs font-mono font-bold text-[#06B6D4]">
                           {project.number} //
                         </span>
                         <span className="text-[10.5px] font-mono tracking-[0.25em] uppercase text-[#94A3B8]">
                           {project.category}
                         </span>
                       </div>
-
                       <h3
-                        className="text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-4 group-hover:text-[#F8FAFC] transition-colors uppercase leading-[0.9]"
+                        className="text-4xl sm:text-5xl tracking-wide text-white uppercase leading-none"
                         style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                       >
                         {project.title}
                       </h3>
-
-                      <p
-                        className="text-xs sm:text-sm md:text-[14px] font-light text-[#94A3B8] leading-[1.85] tracking-wide mb-8 max-w-2xl"
-                        style={{ fontFamily: "'Montserrat', sans-serif" }}
-                      >
-                        {project.description}
-                      </p>
                     </div>
-
-                    {/* Tech Stack Pills */}
-                    <div className="flex flex-wrap gap-2 pt-6 border-t border-[#3B82F6]/25">
-                      {project.tech.map((t) => (
-                        <span
-                          key={t}
-                          className="px-3 py-1 text-[10px] font-medium tracking-[0.16em] uppercase rounded-sm border border-[#3B82F6]/40 bg-[#070B14] text-[#94A3B8] group-hover:border-[#06B6D4]/50 group-hover:text-[#F8FAFC] transition-all duration-300"
-                          style={{ fontFamily: "'Montserrat', sans-serif" }}
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Right Column (5 Cols) */}
-                  <div className="lg:col-span-5 flex flex-col justify-between h-full space-y-6 lg:pl-6 lg:border-l lg:border-[#3B82F6]/25">
-                    <div className="space-y-3">
-                      <span className="text-[9.5px] font-mono tracking-[0.25em] uppercase text-[#3B82F6] block mb-2">
-                        // ARCHITECTURE METRICS
-                      </span>
-                      {project.metrics.map((m) => (
-                        <div
-                          key={m.label}
-                          className="p-3.5 rounded-sm border border-[#3B82F6]/25 bg-[#070B14] flex items-center justify-between"
-                        >
-                          <span className="text-[10px] font-mono text-[#94A3B8]">
-                            {m.label}
-                          </span>
-                          <span className="text-[11px] font-mono font-medium text-[#F8FAFC]">
-                            {m.value}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-[#3B82F6] bg-[#0B1120] hover:border-[#06B6D4] hover:bg-[#3B82F6] text-[#94A3B8] hover:text-[#F8FAFC] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.15)]"
+                      className="mt-4 md:mt-0 inline-flex items-center justify-center space-x-2 px-5 py-2.5 border border-[#3B82F6]/50 bg-[#070B14] hover:border-[#06B6D4] hover:bg-[#3B82F6]/10 text-[#94A3B8] hover:text-white text-[10px] font-medium tracking-[0.2em] uppercase transition-all duration-300"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
-                      <span>VIEW ON GITHUB</span>
-                      <span className="text-xs">↗</span>
+                      <span>GITHUB</span>
+                      <span>↗</span>
                     </a>
                   </div>
 
+                  <p className="text-sm sm:text-base text-white/90 font-light leading-relaxed mb-8" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    {project.oneLineDescription}
+                  </p>
+
+                  {/* Sub-cards Grid */}
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                    
+                    {/* Problem & Solution */}
+                    <SubCard title="PROBLEM" className="lg:col-span-6">
+                      <p className="text-[13px]">{project.problem}</p>
+                    </SubCard>
+                    <SubCard title="SOLUTION" className="lg:col-span-6">
+                      <p className="text-[13px]">{project.solution}</p>
+                    </SubCard>
+
+                    {/* Architecture (if present) */}
+                    {project.architecture && (
+                      <SubCard title="ARCHITECTURE" className="lg:col-span-12">
+                        <code className="text-[#06B6D4] font-mono text-xs">{project.architecture}</code>
+                      </SubCard>
+                    )}
+
+                    {/* Key Features */}
+                    <SubCard title="KEY FEATURES" className="lg:col-span-6">
+                      <ul className="space-y-2.5">
+                        {project.keyFeatures.map((feature, i) => (
+                          <li key={i} className="flex items-start group/li">
+                            <div className="mt-1 mr-3 shrink-0">
+                              <div className="w-1.5 h-1.5 bg-[#3B82F6] rotate-45 group-hover/li:bg-[#06B6D4] transition-colors" />
+                            </div>
+                            <span className="text-[12.5px] group-hover/li:text-white transition-colors">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </SubCard>
+
+                    {/* Outcome & Tech */}
+                    <div className="lg:col-span-6 flex flex-col gap-5">
+                      <SubCard title="OUTCOME" className="flex-1">
+                        <p className="text-[13px]">{project.outcome}</p>
+                      </SubCard>
+                      
+                      <SubCard title="TECH STACK" className="!bg-transparent border-none !p-0">
+                        <div className="flex flex-wrap gap-2">
+                          {project.tech.map((t) => (
+                            <span
+                              key={t}
+                              className="px-2.5 py-1 text-[9.5px] font-medium tracking-[0.15em] uppercase rounded-sm border border-[#3B82F6]/30 bg-[#0B1120] text-[#94A3B8] hover:border-[#06B6D4]/60 hover:text-white transition-all"
+                              style={{ fontFamily: "'Montserrat', sans-serif" }}
+                            >
+                              {t}
+                            </span>
+                          ))}
+                        </div>
+                      </SubCard>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </ScrollStackItem>
           ))}
         </ScrollStack>
-
       </div>
     </section>
   );
