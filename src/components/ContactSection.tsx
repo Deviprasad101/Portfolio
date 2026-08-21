@@ -43,7 +43,7 @@ export const ContactSection: React.FC = () => {
   return (
     <footer
       id="contact"
-      className="relative w-full bg-[#070B14] text-[#F8FAFC] font-sans selection:bg-[#3B82F6]/30 selection:text-[#06B6D4] pt-16 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
+      className="relative w-full bg-[#070B14] text-[#F8FAFC] font-sans selection:bg-[#3B82F6]/30 selection:text-[#06B6D4] pt-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
         
@@ -233,22 +233,21 @@ export const ContactSection: React.FC = () => {
           </motion.div>
 
         </div>
+      </div>
 
-        {/* System Footer Line */}
-        <div className="pt-12 mt-20 border-t border-[#3B82F6]/20 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
-          <div className="flex flex-col space-y-1.5">
-            <span className="text-xl sm:text-2xl text-white uppercase tracking-wider" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-              DEVI PRASAD CHINTHAMREDDY
-            </span>
-            <span className="text-[9px] sm:text-[10px] font-mono tracking-[0.15em] text-[#06B6D4] uppercase">
-              Full Stack Developer | Python | Flask | FastAPI | React.js
-            </span>
-          </div>
-          <div className="text-[9px] sm:text-[10px] font-mono text-[#94A3B8] tracking-widest uppercase md:text-right">
-            © {new Date().getFullYear()} Devi Prasad Chinthamreddy.<br className="hidden md:block" /> All rights reserved.
-          </div>
+      {/* System Footer Line - Full Width Edge to Edge */}
+      <div className="-mx-6 sm:-mx-12 lg:-mx-20 mt-16 pt-10 pb-12 px-6 sm:px-12 lg:px-20 border-t border-[#3B82F6]/20 bg-[#040810] flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6 relative z-10 shadow-[inset_0_20px_40px_rgba(0,0,0,0.4)]">
+        <div className="flex flex-col space-y-1.5">
+          <span className="text-xl sm:text-2xl text-white uppercase tracking-wider" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+            DEVI PRASAD CHINTHAMREDDY
+          </span>
+          <span className="text-[9px] sm:text-[10px] font-mono tracking-[0.15em] text-[#06B6D4] uppercase">
+            Full Stack Developer | Python | Flask | FastAPI | React.js
+          </span>
         </div>
-
+        <div className="text-[9px] sm:text-[10px] font-mono text-[#94A3B8] tracking-widest uppercase md:text-right">
+          © {new Date().getFullYear()} Devi Prasad Chinthamreddy.<br className="hidden md:block" /> All rights reserved.
+        </div>
       </div>
     </footer>
   );
