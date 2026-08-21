@@ -224,13 +224,18 @@ export const ContactSection: React.FC = () => {
         </div>
 
         {/* System Footer Line */}
-        <div className="pt-16 mt-16 border-t border-[#3B82F6]/15 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
-          <span className="text-[10px] font-mono tracking-widest text-[#94A3B8] uppercase">
-            PORTFOLIO // EDITION 2026
-          </span>
-          <span className="text-[10px] font-mono text-[#94A3B8]">
-            © {new Date().getFullYear()} • ENGINEERED WITH PRECISION
-          </span>
+        <div className="pt-12 mt-20 border-t border-[#3B82F6]/20 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
+          <div className="flex flex-col space-y-1.5">
+            <span className="text-xl sm:text-2xl text-white uppercase tracking-wider" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+              DEVI PRASAD CHINTHAMREDDY
+            </span>
+            <span className="text-[9px] sm:text-[10px] font-mono tracking-[0.15em] text-[#06B6D4] uppercase">
+              Full Stack Developer | Python | Flask | FastAPI | React.js
+            </span>
+          </div>
+          <div className="text-[9px] sm:text-[10px] font-mono text-[#94A3B8] tracking-widest uppercase md:text-right">
+            © {new Date().getFullYear()} Devi Prasad Chinthamreddy.<br className="hidden md:block" /> All rights reserved.
+          </div>
         </div>
 
       </div>
