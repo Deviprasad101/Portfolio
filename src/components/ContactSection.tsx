@@ -94,35 +94,46 @@ export const ContactSection: React.FC = () => {
                 className="text-xs sm:text-[13px] font-light text-[#94A3B8] leading-relaxed max-w-md mb-8"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                I'm open to opportunities where I can contribute my full-stack development skills, work on real-world software solutions, and continue growing as a software developer.
+                I'm currently open to Full Stack Developer opportunities where I can contribute to real-world projects, solve technical problems, and continue growing as a software developer.
               </p>
 
               {/* Contact Information */}
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">MAIL //</span>
+              <div className="space-y-5">
+                <div className="flex flex-col space-y-1">
+                  <span className="text-[#3B82F6] font-medium text-[10px] font-mono uppercase tracking-widest">EMAIL</span>
                   <a href="mailto:cdpreddyap@gmail.com" className="text-[#F8FAFC] text-xs sm:text-sm hover:text-[#06B6D4] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     cdpreddyap@gmail.com
                   </a>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">PHONE //</span>
+                <div className="flex flex-col space-y-1">
+                  <span className="text-[#3B82F6] font-medium text-[10px] font-mono uppercase tracking-widest">PHONE</span>
                   <span className="text-[#F8FAFC] text-xs sm:text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     +91 6281604440
                   </span>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-[#3B82F6] font-medium text-xs font-mono uppercase tracking-widest mt-1">LOC //</span>
-                  <span className="text-[#F8FAFC] text-xs sm:text-sm max-w-[200px]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <div className="flex flex-col space-y-1">
+                  <span className="text-[#3B82F6] font-medium text-[10px] font-mono uppercase tracking-widest">LOCATION</span>
+                  <span className="text-[#F8FAFC] text-xs sm:text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     Tirupati, Andhra Pradesh, India
                   </span>
                 </div>
-                <div className="flex items-start space-x-3 pt-4 border-t border-[#3B82F6]/20">
-                  <a href="https://github.com/deviprasad101" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-3 py-1.5 hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors">
+                <div className="flex flex-col space-y-1">
+                  <span className="text-[#3B82F6] font-medium text-[10px] font-mono uppercase tracking-widest">AVAILABLE FOR</span>
+                  <span className="text-[#F8FAFC] text-xs sm:text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    Full-Time Opportunities
+                  </span>
+                </div>
+                
+                <div className="flex flex-wrap gap-3 pt-6">
+                  <a href="https://github.com/deviprasad101" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-4 py-2 hover:border-[#06B6D4] hover:bg-[#3B82F6]/10 hover:text-[#F8FAFC] text-[#94A3B8] transition-all">
                     GITHUB
                   </a>
-                  <a href="https://linkedin.com/in/deviprasad-reddy-chinthamreddy" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-3 py-1.5 hover:border-[#06B6D4] hover:text-[#06B6D4] transition-colors">
+                  <a href="https://linkedin.com/in/deviprasad-reddy-chinthamreddy" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#3B82F6]/40 px-4 py-2 hover:border-[#06B6D4] hover:bg-[#3B82F6]/10 hover:text-[#F8FAFC] text-[#94A3B8] transition-all">
                     LINKEDIN
+                  </a>
+                  <a href="/resume.pdf" target="_blank" rel="noreferrer" className="text-[10px] font-mono tracking-widest uppercase border border-[#06B6D4]/60 bg-[#06B6D4]/5 px-4 py-2 hover:border-[#06B6D4] hover:bg-[#06B6D4]/15 hover:text-[#F8FAFC] text-[#06B6D4] transition-all flex items-center space-x-1.5">
+                    <span>DOWNLOAD RESUME</span>
+                    <span className="text-[9px]">↓</span>
                   </a>
                 </div>
               </div>
