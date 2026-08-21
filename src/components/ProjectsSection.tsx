@@ -41,8 +41,7 @@ const projects: Project[] = [
     category: 'GEOSPATIAL PLATFORM',
     oneLineDescription: 'A centralized geospatial data management and visualization platform for discovering, publishing, and analyzing spatial datasets.',
     problem: 'Geospatial datasets such as vector, raster, LAS, and 3D data can be difficult to organize, publish, search, and visualize across separate systems.',
-    solution: 'Developed a centralized platform that allows users to upload, manage, search, preview, and publish geospatial datasets through an integrated web interface.',
-    architecture: 'Flask → PostGIS → GeoServer → Web Interface',
+    solution: 'Developed a centralized platform to manage, search, preview, and publish spatial datasets using a Flask → PostGIS → GeoServer → Web Interface architecture.',
     keyFeatures: [
       'Centralized dataset upload, management, & processing',
       'Spatial database integration using PostGIS',
