@@ -4,36 +4,52 @@ import type { Variants } from 'framer-motion';
 
 const bentoCategories = [
   {
-    title: 'WEB TECHNOLOGIES',
-    badge: 'FRONTEND',
-    items: ['HTML5', 'CSS', 'React.js', 'JavaScript'],
-    description: 'Experience in building modern, responsive, and user-friendly web interfaces ensuring cross-device compatibility.',
-    stat: '100% RESPONSIVE',
-    colSpan: 'lg:col-span-7',
+    title: 'PROGRAMMING',
+    badge: 'LANGUAGES',
+    items: ['Python', 'JavaScript'],
+    description: 'Core languages used for building full-stack applications, algorithms, and backend services.',
+    stat: 'CORE',
+    colSpan: 'md:col-span-6 lg:col-span-4',
   },
   {
-    title: 'BACKEND FRAMEWORKS',
+    title: 'FRONTEND',
+    badge: 'UI/UX',
+    items: ['HTML5', 'CSS3', 'React.js'],
+    description: 'Building modern, responsive, and user-friendly web interfaces ensuring cross-device compatibility.',
+    stat: 'RESPONSIVE',
+    colSpan: 'md:col-span-6 lg:col-span-4',
+  },
+  {
+    title: 'BACKEND',
     badge: 'API & LOGIC',
-    items: ['Flask', 'FastAPI', 'REST APIs', 'Python'],
+    items: ['Flask', 'FastAPI', 'REST APIs'],
     description: 'Building scalable backends, robust REST APIs, and seamless frontend-backend integrations.',
-    stat: 'FAST & SECURE',
-    colSpan: 'lg:col-span-5',
+    stat: 'SCALABLE',
+    colSpan: 'md:col-span-6 lg:col-span-4',
   },
   {
-    title: 'DATABASES & QUERIES',
+    title: 'DATABASES',
     badge: 'DATA',
-    items: ['PostgreSQL', 'SQL'],
-    description: 'Experience with relational databases, writing efficient SQL queries, and handling spatial data with PostGIS.',
-    stat: 'RELATIONAL',
-    colSpan: 'lg:col-span-5',
+    items: ['PostgreSQL', 'SQLite', 'SQL'],
+    description: 'Experience with relational databases, writing efficient queries, and data modeling.',
+    stat: 'PERSISTENT',
+    colSpan: 'md:col-span-6 lg:col-span-4',
   },
   {
-    title: 'TOOLS & SOFT SKILLS',
-    badge: 'EFFICIENCY',
-    items: ['Docker', 'Git/GitHub', 'AI Tools', 'Problem-Solving'],
-    description: 'Proficient in AI-assisted development (Cursor, Antigravity, ChatGPT, Claude), containerization, and collaborative workflows.',
-    stat: 'OPTIMIZED',
-    colSpan: 'lg:col-span-7',
+    title: 'DEV TOOLS',
+    badge: 'WORKFLOW',
+    items: ['Git', 'GitHub', 'Docker', 'VS Code'],
+    description: 'Proficient in version control, containerization, and modern collaborative development workflows.',
+    stat: 'EFFICIENT',
+    colSpan: 'md:col-span-6 lg:col-span-4',
+  },
+  {
+    title: 'AI DEVELOPMENT',
+    badge: 'AI-ASSISTED',
+    items: ['Cursor', 'Antigravity', 'ChatGPT', 'Claude AI'],
+    description: 'Using AI-assisted development tools for coding, debugging, research, documentation, and problem-solving.',
+    stat: 'ACCELERATED',
+    colSpan: 'md:col-span-6 lg:col-span-4',
   },
 ];
 
@@ -119,7 +135,7 @@ export const SkillsSection: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-60px' }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-6"
+          className="grid grid-cols-1 md:grid-cols-12 gap-6"
         >
           {bentoCategories.map((block, idx) => (
             <motion.div
