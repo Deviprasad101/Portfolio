@@ -21,9 +21,9 @@ const journey: RouteStop[] = [
   {
     id: '02',
     year: '2021 - 2025',
-    title: 'B.TECH CSE (AIML)',
-    organization: 'MALLA REDDY ENGINEERING COLLEGE',
-    description: 'Graduating with a 7.06 CGPA. Gained strong foundations in programming, AI/ML concepts, and software development methodologies.',
+    title: 'B.TECH - CSE (AI & ML)',
+    organization: 'MALLA REDDY ENGINEERING COLLEGE, HYDERABAD, INDIA',
+    description: 'CGPA: 7.06 / 10',
   },
 ];
 
