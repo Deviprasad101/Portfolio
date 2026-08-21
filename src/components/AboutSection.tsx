@@ -128,15 +128,53 @@ export const AboutSection: React.FC = () => {
               </h2>
             </motion.div>
 
-            {/* Concise Bio Paragraph */}
+            {/* 4 Professional Summary Cards */}
             <motion.div 
               variants={fadeUpVariants}
-              className="text-sm sm:text-[15px] font-light text-[#94A3B8] leading-relaxed max-w-2xl space-y-6"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              className="flex flex-col gap-3.5 mb-8 max-w-3xl"
             >
-              <p>
-                I'm <span className="text-[#06B6D4] font-medium">Deviprasad Chinthamreddy</span>, a motivated Computer Science student with strong Python, web development, and problem-solving skills, eager to contribute to impactful projects and grow as a software professional.
-              </p>
+              {[
+                {
+                  id: "01",
+                  title: "CORE FOCUS",
+                  text: "I am a Full Stack Developer with hands-on experience developing web applications using Python, Flask, FastAPI, React.js, JavaScript, PostgreSQL, and REST APIs."
+                },
+                {
+                  id: "02",
+                  title: "MY APPROACH",
+                  text: "I enjoy building practical software solutions that combine clean backend architecture, responsive user interfaces, database integration, and real-world functionality."
+                },
+                {
+                  id: "03",
+                  title: "PROFESSIONAL TENURE",
+                  text: "During my professional experience at IIT Tirupati Navavishkar I-Hub Foundation, I have worked across the software development lifecycle, including requirement analysis, development, API integration, database management, testing, debugging, optimization, and deployment."
+                },
+                {
+                  id: "04",
+                  title: "ONGOING EVOLUTION",
+                  text: "I am continuously improving my skills in full-stack development, cloud deployment, geospatial technologies, and AI-assisted software development."
+                }
+              ].map((card, idx) => (
+                <div 
+                  key={idx}
+                  className="relative p-5 pl-6 rounded-sm border border-[#3B82F6]/15 bg-[#0B1120]/50 backdrop-blur-md hover:border-[#06B6D4]/40 hover:bg-[#3B82F6]/5 transition-all duration-300 group overflow-hidden"
+                >
+                  {/* Left accent line */}
+                  <div className="absolute top-0 left-0 w-[2px] h-full bg-[#3B82F6]/40 group-hover:bg-[#06B6D4] group-hover:shadow-[0_0_12px_rgba(6,182,212,0.6)] transition-all duration-300" />
+                  
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-5">
+                    <div className="flex items-center gap-2 sm:w-36 shrink-0 mt-0.5">
+                      <span className="text-[10px] font-mono text-[#06B6D4] opacity-70 group-hover:opacity-100 transition-opacity">{card.id} //</span>
+                      <h3 className="text-[9.5px] font-bold tracking-[0.2em] text-[#F8FAFC] group-hover:text-[#3B82F6] transition-colors uppercase" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        {card.title}
+                      </h3>
+                    </div>
+                    <p className="text-[12.5px] text-[#94A3B8] font-light leading-relaxed group-hover:text-[#F8FAFC] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                      {card.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </motion.div>
 
             {/* Concise 4-Item Achievement Metrics Grid */}
