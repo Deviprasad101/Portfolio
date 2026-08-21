@@ -68,7 +68,7 @@ const floatingIcons = [
   { Icon: SiSqlite, name: 'SQLite', top: '88%', left: '62%', color: '#003B57', sizeClasses: 'text-2xl md:text-3xl lg:text-4xl', delay: 1.8, duration: 7.8, displayClasses: 'hidden md:block' },
   { Icon: FaGitAlt, name: 'Git', top: '45%', left: '90%', color: '#F05032', sizeClasses: 'text-2xl md:text-3xl lg:text-4xl', delay: 3.5, duration: 8.8, displayClasses: 'hidden md:block' },
   { Icon: FaGithub, name: 'GitHub', top: '60%', left: '88%', color: '#FFFFFF', sizeClasses: 'text-3xl md:text-4xl lg:text-5xl', delay: 1.1, duration: 9.2, displayClasses: 'block' },
-  { Icon: FaDocker, name: 'Docker', top: '78%', left: '82%', color: '#2496ED', sizeClasses: 'text-4xl md:text-5xl lg:text-6xl', delay: 2.8, duration: 10.5, displayClasses: 'block' },
+  { Icon: FaDocker, name: 'Docker', top: '83%', left: '92%', color: '#2496ED', sizeClasses: 'text-4xl md:text-5xl lg:text-6xl', delay: 2.8, duration: 10.5, displayClasses: 'block' },
   { Icon: VscVscode, name: 'VS Code', top: '35%', left: '22%', color: '#007ACC', sizeClasses: 'text-2xl md:text-3xl lg:text-4xl', delay: 0.3, duration: 7.2, displayClasses: 'hidden lg:block' },
   { Icon: FaTerminal, name: 'Cursor', top: '62%', left: '22%', color: '#FFFFFF', sizeClasses: 'text-xl md:text-2xl lg:text-3xl', delay: 2.1, duration: 8.6, displayClasses: 'hidden md:block' },
   { Icon: VscOpenai, name: 'ChatGPT', top: '72%', left: '55%', color: '#10A37F', sizeClasses: 'text-2xl md:text-3xl lg:text-4xl', delay: 0.9, duration: 7.9, displayClasses: 'hidden sm:block' },
@@ -120,7 +120,7 @@ export const SkillsSection: React.FC = () => {
             style={{ top: item.top, left: item.left }}
             initial={{ y: 0, x: 0, rotate: 0, opacity: 0 }}
             whileInView={{
-              opacity: [0.4, 0.8, 0.4],
+              opacity: [0.85, 1, 0.85],
               y: [-12, 12, -12],
               x: [-4, 4, -4],
               rotate: [-4, 4, -4],
@@ -143,8 +143,8 @@ export const SkillsSection: React.FC = () => {
             >
               {/* Icon */}
               <div 
-                className={`${item.sizeClasses} transition-all duration-300 drop-shadow-[0_0_15px_currentColor] group-hover:drop-shadow-[0_0_30px_currentColor]`}
-                style={{ color: item.color, filter: 'brightness(1.25)' }}
+                className={`${item.sizeClasses} transition-all duration-300 drop-shadow-[0_2px_8px_currentColor] opacity-90 group-hover:opacity-100 group-hover:drop-shadow-[0_4px_12px_currentColor] group-hover:-translate-y-1`}
+                style={{ color: item.color, filter: 'brightness(1.1) saturate(1.2)' }}
               >
                 <item.Icon />
               </div>
