@@ -12,7 +12,6 @@ interface Project {
   architecture?: string;
   keyFeatures: string[];
   outcome: string;
-  githubUrl: string;
   tech: string[];
 }
 
@@ -32,7 +31,6 @@ const projects: Project[] = [
       'Centralized admin dashboard for visitor management'
     ],
     outcome: 'Helps users plan pilgrimage trips more efficiently while providing interactive navigation, digital check-ins, and centralized visitor information for administrators.',
-    githubUrl: 'https://github.com/deviprasad101',
     tech: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'React.js', 'PostgreSQL', 'SQLite', 'Leaflet', 'OpenStreetMap', 'OSRM'],
   },
   {
@@ -50,7 +48,6 @@ const projects: Project[] = [
       'Interactive geospatial search and data preview'
     ],
     outcome: 'Provides a centralized platform for discovering, previewing, managing, and serving geospatial datasets through standardized geospatial services.',
-    githubUrl: 'https://github.com/deviprasad101',
     tech: ['Python', 'Flask', 'PostgreSQL', 'PostGIS', 'GeoServer', 'GDAL', 'PDAL', 'ogr2ogr', 'JavaScript', 'Cesium'],
   },
   {
@@ -68,7 +65,6 @@ const projects: Project[] = [
       'Efficient data streaming using PMTiles and Zarr'
     ],
     outcome: 'Enables real-time, interactive exploration of massive geospatial and climate datasets directly in the browser without performance bottlenecks.',
-    githubUrl: 'https://github.com/deviprasad101',
     tech: ['React 18', 'MapLibre GL', 'PMTiles', 'Zarr', 'Python', 'Flask'],
   },
 ];
@@ -176,16 +172,6 @@ export const ProjectsSection: React.FC = () => {
                         {project.title}
                       </h3>
                     </div>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 md:mt-0 inline-flex items-center justify-center space-x-2 px-5 py-2.5 border border-[#3B82F6]/50 bg-[#070B14] hover:border-[#06B6D4] hover:bg-[#3B82F6]/10 text-[#94A3B8] hover:text-white text-[10px] font-medium tracking-[0.2em] uppercase transition-all duration-300"
-                      style={{ fontFamily: "'Montserrat', sans-serif" }}
-                    >
-                      <span>GITHUB</span>
-                      <span>↗</span>
-                    </a>
                   </div>
 
                   <p className="text-sm sm:text-base text-white/90 font-light leading-relaxed mb-8" style={{ fontFamily: "'Montserrat', sans-serif" }}>
