@@ -80,9 +80,9 @@ const projects: Project[] = [
 ];
 
 const SubCard: React.FC<{ title: string; children: React.ReactNode; className?: string; icon?: React.ReactNode }> = ({ title, children, className = '', icon }) => (
-  <div className={`relative p-5 sm:p-7 rounded-sm border border-[#3B82F6]/20 bg-[#070B14]/40 hover:bg-[#0B1120]/80 hover:border-[#06B6D4]/40 transition-all duration-300 group ${className}`}>
+  <div className={`relative p-4 sm:p-5 rounded-sm border border-[#3B82F6]/20 bg-[#070B14]/40 hover:bg-[#0B1120]/80 hover:border-[#06B6D4]/40 transition-all duration-300 group ${className}`}>
     <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#3B82F6]/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
-    <div className="flex items-center space-x-2 mb-3">
+    <div className="flex items-center space-x-2 mb-2">
       {icon && <span className="text-[#3B82F6] group-hover:text-[#06B6D4] transition-colors">{icon}</span>}
       <h4 className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#3B82F6] group-hover:text-[#06B6D4] transition-colors">
         {title}
@@ -153,7 +153,7 @@ export const ProjectsSection: React.FC = () => {
         >
           {projects.map((project) => (
             <ScrollStackItem key={project.title}>
-              <div className="relative w-full rounded-2xl border border-[#3B82F6]/40 bg-[#0B1120] p-6 sm:p-10 shadow-[0_25px_70px_rgba(0,0,0,0.98)] group/main overflow-hidden transition-colors duration-500 hover:border-[#06B6D4]">
+              <div className="relative w-full rounded-2xl border border-[#3B82F6]/40 bg-[#0B1120] p-5 sm:p-7 shadow-[0_25px_70px_rgba(0,0,0,0.98)] group/main overflow-hidden transition-colors duration-500 hover:border-[#06B6D4]">
                 
                 {/* Big Background Watermark Number */}
                 <span
@@ -199,7 +199,7 @@ export const ProjectsSection: React.FC = () => {
                   </p>
 
                   {/* Sub-cards Grid */}
-                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
                     
                     {/* Problem & Solution */}
                     <SubCard title="PROBLEM" className="lg:col-span-6">
